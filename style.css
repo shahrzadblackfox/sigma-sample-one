@@ -1,6 +1,10 @@
 body {
   background-color: #1c1718;
 }
+
+:root {
+  --gray: #d9d9d9;
+}
 .menu-top {
   display: flex;
   grid-gap: 10px;
@@ -12,7 +16,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
 }
 
 li {
@@ -27,10 +30,19 @@ a {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
 .active {
   background-color: #04aa6d;
+}
+
+.menu-login {
+  background-color: #e44320;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+}
+.grid-item1 {
+  grid-column: 1/5;
+  color: var(--gray);
 }
