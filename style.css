@@ -9,6 +9,7 @@ body {
   display: flex;
   grid-gap: 10px;
   justify-content: space-between;
+  z-index: 1;
 }
 
 ul {
@@ -39,10 +40,38 @@ a {
 }
 
 .grid-container {
-  display: grid;
-  gap: 10px;
+  height: 100vh;
+  z-index: -2;
 }
 .grid-item1 {
-  grid-column: 1/5;
   color: var(--gray);
+  margin-left: 50px;
+}
+.grid-item1 h1 {
+  font-size: 83px;
+}
+.grid-item2 {
+  color: var(--gray);
+  right: 0;
+  grid-column: 4/6;
+  position: absolute;
+  right: 322px;
+  z-index: -1;
+  top: 120px;
+}
+.grid-item3 {
+  position: absolute;
+  top: -78px;
+  right: 0;
+  z-index: -1;
+}
+.h1-skills {
+  color: #e44320;
+}
+
+.button-learning {
+  background-color: var(--gray);
+  padding: 12px 25px;
+  font-size: 30px;
+  border-radius: 10px;
 }
